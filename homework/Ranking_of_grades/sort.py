@@ -1,4 +1,7 @@
-with open('/Users/jerry/PyCharmMiscProject/begin/成绩单.txt')as txt:
+import os
+base_path=os.path.dirname(__file__)
+file_path=os.path.join(base_path,'report.txt')
+with open(file_path,'r',encoding='utf-8')as txt:
     lines=txt.readlines()
 student={}
 all_name=[]
